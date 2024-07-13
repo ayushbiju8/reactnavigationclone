@@ -1,0 +1,14 @@
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+}
+@media screen and (max-width:730px) {
+    .footer{
+        grid-template-columns: 1fr;
+        padding: 30px 30px;
+        font-size: 14px;
+    }
+}

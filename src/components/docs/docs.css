@@ -1,0 +1,69 @@
+.docsmain{
+    height: calc(100vh - 60px);
+    width: 100vw;
+    display: flex;
+}
+.leftdocs{
+    flex: 0.8;
+    padding-top: 10px;
+}
+.middledocs{
+    flex: 2;
+}
+.rightdocs{
+    flex: 0.8;
+}
+.insiderightdocs{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+.insiderightdocs h6:hover{
+    color: #7457c4;
+}
+.rightdocs h6{
+    font-size: 12px;
+}
+.mainheadingbox{
+    width: 95%;
+    padding-left: 15px;
+}
+.mainheading{
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-radius: 4px;
+}
+.mainheading:hover{
+    background-color: rgb(233, 233, 233);
+}
+.subcontent{
+    margin-left: 20px;
+    width: calc(100% - 20px);
+    font-size: 15px;
+    color: rgb(68, 68, 68);
+    cursor: pointer;
+}
+.subcontent li{
+    padding-left: 5px;
+    border-radius: 4px;
+    width: 90%;
+}
+.subcontent li:hover{
+    background-color: rgb(233, 233, 233);
+}
+@media screen and (max-width:1100px){
+    .leftdocs{
+        display: none;
+    }
+    .rightdocs{
+        display: none;
+    }
+}

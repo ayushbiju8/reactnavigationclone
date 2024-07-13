@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+@keyframes slide-in-left{0%{transform:translateX(-1000px);opacity:0}100%{transform:translateX(0);opacity:1}}
+@keyframes slide-out-left{0%{transform:translateX(0);opacity:1}100%{transform:translateX(-1000px);opacity:0}}
+.active {
+    color: #7457c4;
+}
+
+.Navbar {
+    height: 60px;
+    background-color: white;
+    -webkit-box-shadow: 0px 10px 26px -18px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: 0px 10px 26px -18px rgba(0, 0, 0, 0.26);
+    box-shadow: 0px 10px 26px -18px rgba(0, 0, 0, 0.26);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    font-family: "Mukta", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.navprop {
+    padding: 10px;
+}
+
+.navprop:hover {
+    color: #7457c4;
+}
+
+.navtheme {
+    color: rgb(112, 112, 112);
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+}
+
+.navtheme:hover {
+    background-color: rgb(225, 225, 225);
+    color: rgb(82, 82, 82);
+    border-radius: 50%;
+}
+
+.navinputsearch {
+    background-color: rgb(221, 221, 221);
+    width: 150px;
+    margin-right: 20px;
+    height: 40px;
+    font-size: 15px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: rgb(55, 55, 55);
+}
+
+.navinputsearch:focus {
+    outline: none;
+}
+
+.leftshortnav {
+    max-width: 300px;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: rgba(255, 234, 234, 0.949);
+    display: none;
+    top: 60px;
+    position: absolute;
+    left: -300px;
+}
+.slide-in-left{
+    animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.slide-out-left{
+    animation: slide-out-left 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+.onclickanimation {
+    display: flex;
+    left: 0;
+}
+@media screen and (max-width:900px) {
+
+    .navgithub,
+    .navinputsearch,
+    .navtheme {
+        display: none;
+    }
+    .navsearch,
+    .hamburger {
+        display: block;
+    }
+
+    .vanishinsmallscreen {
+        display: none;
+    }
+}

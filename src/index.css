@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --bgc : rgba(230, 231, 255, 0.702);
+    --text : "black";
+}
+
+[datatheme = 'dark']{
+    --bgc : rgba(32, 32, 32, 0.702);
+    --text : "white";
+}
